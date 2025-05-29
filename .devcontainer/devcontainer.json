@@ -1,0 +1,15 @@
+{
+    "name": "Ruby on Rails N+1 Example",
+    "dockerComposeFile": "../docker-compose.yml",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "rebornix.ruby",
+                "castwide.solargraph",
+                "shopify.ruby-lsp"
+            ]
+        }
+    },
+    "postCreateCommand": "bundle install && bundle exec rails db:create db:migrate",
+    "remoteUser": "root"
+}
