@@ -11,5 +11,6 @@
         }
     },
     "postCreateCommand": "bundle install && bundle exec rails db:create db:migrate",
-    "remoteUser": "root"
+    "remoteUser": "root",
+    "workspaceFolder": "/workspaces/ruby-on-rails-n-plus-1-example"
 }
