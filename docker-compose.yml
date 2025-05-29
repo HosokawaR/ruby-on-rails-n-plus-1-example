@@ -1,5 +1,21 @@
 version: '3.8'
 services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/app
+    ports:
+      - "3000:3000"
+    depends_on:
+      - db
+    environment:
+      DATABASE_URL: postgres://postgres:postgres@db:5432/n_plus_one_example_development
+      RAILS_ENV: development
+    tty: true
+    stdin_open: true
+
   db:
     image: postgres:15
     environment:
