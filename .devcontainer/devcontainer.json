@@ -1,8 +1,8 @@
 {
     "name": "Ruby on Rails N+1 Example",
     "dockerComposeFile": "../docker-compose.yml",
-    "service": "app",
-    "workspaceFolder": "/app",
+    "service": "db",
+    "workspaceFolder": "/workspaces/ruby-on-rails-n-plus-1-example",
     "customizations": {
         "vscode": {
             "extensions": [
@@ -13,8 +13,5 @@
         }
     },
     "postCreateCommand": "bundle install && bundle exec rails db:create db:migrate",
-    "remoteUser": "root",
-    "forwardPorts": [
-        3000
-    ]
+    "remoteUser": "root"
 }
