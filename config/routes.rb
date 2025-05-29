@@ -1,7 +1,11 @@
 Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
-      resources :mice, only: [:index, :show]
+      resources :mice, only: [:index, :show] do
+        collection do
+          get :counts
+        end
+      end
     end
   end
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
