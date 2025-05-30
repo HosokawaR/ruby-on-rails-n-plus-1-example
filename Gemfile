@@ -47,14 +47,14 @@ group :development, :test do
   # Omakase Ruby styling [https://github.com/rails/rubocop-rails-omakase/]
   gem "rubocop-rails-omakase", require: false
 
-  gem 'rspec-rails'
-  gem 'factory_bot_rails'
-  gem 'bullet'
-  gem 'pry-rails'
-  gem 'database_cleaner-active_record'
-  gem 'database_rewinder'
+  gem "rspec-rails"
+  gem "factory_bot_rails"
+  gem "bullet"
+  gem "pry-rails"
+  gem "database_cleaner-active_record"
+  gem "database_rewinder"
 end
 
 group :test do
-  gem 'shoulda-matchers'
+  gem "shoulda-matchers"
 end
