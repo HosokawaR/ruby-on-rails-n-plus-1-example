@@ -4,7 +4,7 @@ ENV['RAILS_ENV'] ||= 'test'
 require_relative '../config/environment'
 
 DatabaseCleaner.url_allowlist = [
-  'postgres://postgres:postgres@db:5432/n_plus_one_example_test',
+  'postgres://postgres:postgres@test_db:5432/n_plus_one_example_test',
   'postgres://postgres:postgres@db:5432/n_plus_one_example_development'
 ]
 
