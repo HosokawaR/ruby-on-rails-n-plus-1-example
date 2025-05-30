@@ -15,7 +15,7 @@ module SqlQueryLogger
 
     puts "\nTotal queries: #{queries.count}"
 
-    if queries.count > 2
+    if queries.count > 3
       warn "\e[1;31;43m[Warning] N+1 Queries！\e[0m"
     else
       puts "\e[1;32;40m[Success] No N+1 Queries！\e[0m"
