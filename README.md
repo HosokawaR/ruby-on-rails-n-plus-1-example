@@ -1,6 +1,6 @@
 # Ruby on Rails N+1 examples
 
-Launch GitHub Codespaces and run `bundle exec rspec spec` to see the N+1 problem in action, or clone the repository and run `docker compose run --rm app bundle exec rspec spec` to see the N+1 problem in action.
+Launch GitHub Codespaces and run `bundle exec rspec spec/requests/api/v1/mice_spec.rb` to see the N+1 problem in action, or clone the repository and run `docker compose run --rm app bundle exec rspec spec/requests/api/v1/mice_spec.rb` to see the N+1 problem in action.
 
 You can see the N+1 problem in the logs.
 
